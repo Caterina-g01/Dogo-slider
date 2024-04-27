@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+a {
+	color: rgb(229, 210, 210);
+	text-decoration: none;
+}
+
+a:hover {
+	color: rgb(178, 143, 143);
+	/* Цвет гиперссылок при наведении */
+}
+
+a:active {
+	color: #e0b3b3;
+	/* Цвет гиперссылок после нажатия */
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-size: 18px;
+	background-color: rgb(0, 33, 31);
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.description {
+	color: #b5e2d7;
+	font-size: 40px;
+}
+
+.text {
+	color: #e1f5f0;
+	font-size: 30px;
+}
+
+.texts {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	color: #4e9d89;
+	font-size: 90px;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+
+.slider-images {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.texts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.slider-dot.active {
+	background-image: url(../img/White_dott.png);
+	background-repeat: no-repeat;
+}
+
+.img {
+	width: 100%;
+	height: auto;
+	display: none;
+	transition: transform 0.8s ease;
+}
+
+.img:hover {
+	-o-transform: skew(-3deg, 3deg);
+	-ms-transform: skew(-3deg, 3deg);
+	-moz-transform: skew(-3deg, 3deg);
+	-webkit-transform: skew(-3deg, 3deg);
+	transform: skew(-3deg, 3deg);
+}
+
+.img.active {
+	display: block;
+}
+
+.slider-block {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.right:hover {
+	background-color: #fffdfd09;
+	border-radius: 10px;
+}
+
+.left:hover {
+	background-color: #fffdfd09;
+	border-radius: 10px;
+}
+
+.right {
+	margin-left: 40px;
+}
+
+.left {
+	margin-right: 40px;
+}
+
+.dots {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	gap: 30px;
+}
+
+.arrow-right,
+.arrow-left {
+	display: flex;
+	align-items: center;
+}
+
+.arrow-right {
+	margin-left: 40px;
+}
+
+.arrow-left {
+	margin-right: 40px;
+}
